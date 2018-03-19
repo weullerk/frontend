@@ -7,7 +7,7 @@ The purpose of this repository is to test your skills.
 
 This repository contains three modules, dashboard, form, and list. You must model these components according to the design that is in the Layouts folder.
 
-What is most important in each module:
+What is most important in each module (is circled in each image):
 
     - Dashboard:
         - Navigation.
