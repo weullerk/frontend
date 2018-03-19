@@ -1,27 +1,23 @@
-# FrontendTest
+# Meep
+> Welcome to the Meep frontend test.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
+The purpose of this repository is to test your skills.
 
-## Development server
+## Getting started
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+This repository contains three modules, dashboard, form, and list. You must model these components according to the design that is in the Layouts folder.
 
-## Code scaffolding
+What is most important in each module:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+    - Dashboard:
+        - Navigation.
+    - Form:
+        - Select the image and crop.
+    - List:
+        - Infinite Scroll.
 
-## Build
+You will be evaluated by the organization and quality of the code. Also time is very important. Feel free to submit as many modules as you want, the more modules, the more points, but do not forget the time.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+You should hold a fork of the repository and submit a merge.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Good Luck :four_leaf_clover:
