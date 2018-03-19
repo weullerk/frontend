@@ -13,6 +13,7 @@ What is most important in each module:
         - Navigation.
     - Form:
         - Select the image and crop.
+        - Mask.
     - List:
         - Infinite Scroll.
 
