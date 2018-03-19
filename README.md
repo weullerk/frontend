@@ -19,6 +19,6 @@ What is most important in each module:
 
 You will be evaluated by the organization and quality of the code. Also time is very important. Feel free to submit as many modules as you want, the more modules, the more points, but do not forget the time.
 
-You should hold a fork of the repository and submit a merge.
+You should hold a fork of the repository and submit a pull request.
 
 Good Luck :four_leaf_clover:
