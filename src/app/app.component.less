@@ -1,0 +1,25 @@
+@color-primary: #673ab7;
+@color-secondary: #999999;
+@color-accent: rgb(245, 245, 245);
+
+.primary { color: @color-primary; }
+.secondary { color: @color-secondary; }
+
+.bold { font-weight: bolder; }
+
+
+.menu {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+
+  div {
+    flex-grow: 1;
+    text-align: center;
+    flex-basis: 100%;
+  }
+
+  .icon {
+    text-align: left;
+  }
+}

@@ -1,0 +1,96 @@
+@import "../../app.component.less";
+
+
+.user-informations {
+  align-content: center;
+  display: flex;
+  flex-flow: row nowrap;
+
+  .columns {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .saldo, .buttons :last-child {
+    margin-top: 0.7em;
+  }
+}
+
+.extract-title {
+  margin-bottom: 0.7em;
+  color: @color-primary;
+  font-weight: bolder;
+}
+
+.extract-presentation {
+  display: flex;
+  flex-flow: row nowrap;
+  padding-bottom: 1em;
+
+  div {
+    border: 1px solid #999999;
+    border-radius: 5px;
+    flex-grow: 1;
+    flex-basis: 50%;
+    text-align: center;
+    padding: 1em 0;
+
+    &:last-child {
+      margin-left: 0.7em;
+    }
+  }
+}
+
+.extract-list {
+  display: flex;
+  flex-flow: column nowrap;
+  border: 1px solid #999999;
+  border-radius: 5px;
+  padding: 0.5em 0.5em;
+  margin-top: 1em;
+  position: relative;
+  z-index: 0;
+
+  .arrow-left, .arrow-right {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+  }
+
+  .arrow-left {
+    left: -1.5em;
+  }
+
+  .arrow-right {
+    right: -1.5em;
+  }
+
+  .extract-item {
+    display: flex;
+    flex-flow: row nowrap;
+    flex-grow: 1;
+    margin-bottom: 0.3em;
+
+    .extract-icon {
+      flex-basis: 15%;
+      padding-top: 0.4em;
+    }
+
+    .extract-wrapper {
+      flex-basis: 60%;
+      font-weight: bolder;
+      div {
+        display: block;
+      }
+    }
+
+    .extract-price {
+      color: @color-primary;
+      flex-basis: 25%;
+      padding-top: 0.8em;
+      text-align: right;
+    }
+  }
+}

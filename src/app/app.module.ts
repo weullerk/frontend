@@ -1,12 +1,16 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { AppRoutesModule } from './app.routes.module';
+
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+
+import { DashboardModule } from './modules/dashboard/dashboard.module';
+import { FormModule } from './modules/form/form.module';
+import { ListModule } from './modules/list/list.module';
 
 import { AppComponent } from './app.component';
-import { FormModule } from './modules/form/form.module';
-import { DashboardModule } from './modules/dashboard/dashboard.module';
-import { ListModule } from './modules/list/list.module';
-import { AppRoutesModule } from './app.routes.module';
 
 @NgModule({
   declarations: [
@@ -15,6 +19,8 @@ import { AppRoutesModule } from './app.routes.module';
   imports: [
     BrowserModule,
     AppRoutesModule,
+    BrowserAnimationsModule,
+    NgbModule.forRoot(),
     DashboardModule,
     FormModule,
     ListModule
