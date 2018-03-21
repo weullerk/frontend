@@ -1,0 +1,47 @@
+@import "../../app.component.less";
+
+.filter {
+  display: flex;
+  flex-flow: row nowrap;
+  padding-top: 1.5em;
+
+  button {
+    flex-grow: 1;
+    margin: 0 0.4em;
+  }
+}
+
+.consumption-list {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-top: 1em;
+
+  .consumption-item {
+    display: flex;
+    flex-flow: row nowrap;
+    flex-grow: 1;
+    margin-bottom: 0.3em;
+    border-top: 1px solid @color-secondary;
+    padding: 0.1em 0.5em 0 0.5em;
+
+    .consumption-icon {
+      flex-basis: 15%;
+      padding-top: 0.5em;
+    }
+
+    .consumption-wrapper {
+      flex-basis: 60%;
+      .consumption-description {
+        color: @color-primary;
+        font-weight: bolder;
+      }
+    }
+
+    .consumption-date {
+      color: @color-primary;
+      flex-basis: 25%;
+      padding-top: 1em;
+      text-align: right;
+    }
+  }
+}
