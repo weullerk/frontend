@@ -1,13 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ListComponent } from './list.component';
+import { ListComponent } from './components/list.component';
 import { MaterialModule } from '../material/material.module';
+import { InfiniteScrollModule } from 'ngx-infinite-scroll';
+import {ListService} from './services/list.service';
 
 @NgModule({
   imports: [
     CommonModule,
-    MaterialModule
+    MaterialModule,
+    InfiniteScrollModule
   ],
-  declarations: [ListComponent]
+  declarations: [ListComponent],
+  providers: [ListService]
 })
 export class ListModule { }
