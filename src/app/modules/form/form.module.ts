@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MaterialModule } from '../material/material.module';
 import { ImageCropperModule } from 'ngx-image-cropper';
+import { RouterModule } from '@angular/router';
 
 import { FormService } from './services/form.service';
 
@@ -12,6 +13,7 @@ import { NgxMaskModule } from 'ngx-mask';
 @NgModule({
   imports: [
     CommonModule,
+    RouterModule,
     MaterialModule,
     ImageCropperModule,
     NgxMaskModule

@@ -1,7 +1,13 @@
 <mat-toolbar class="menu">
   <div class="icon">
-    <button mat-icon-button><mat-icon>menu</mat-icon></button>
+    <button mat-icon-button [matMenuTriggerFor]="appMenu">
+      <mat-icon>menu</mat-icon>
+    </button>
   </div>
+  <mat-menu #appMenu="matMenu">
+    <button mat-menu-item routerLink="/form">Conta</button>
+    <button mat-menu-item  routerLink="/list">Extrato</button>
+  </mat-menu>
   <div class="page">Home</div>
   <div>&nbsp;</div>
 </mat-toolbar>
