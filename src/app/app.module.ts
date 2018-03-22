@@ -5,6 +5,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutesModule } from './app.routes.module';
 
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {MaterialModule} from './modules/material/material.module';
+import {MAT_DIALOG_DEFAULT_OPTIONS} from '@angular/material';
 
 import { DashboardModule } from './modules/dashboard/dashboard.module';
 import { FormModule } from './modules/form/form.module';
@@ -23,7 +25,8 @@ import { AppComponent } from './app.component';
     NgbModule.forRoot(),
     DashboardModule,
     FormModule,
-    ListModule
+    ListModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

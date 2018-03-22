@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './modules/dashboard/dashboard.component';
-import { FormComponent } from './modules/form/form.component';
+import { FormComponent } from './modules/form/components/form.component';
 import { ListComponent } from './modules/list/list.component';
 
 const appRoutes: Routes = [

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import {
-  MatButtonModule, MatCardModule, MatDividerModule, MatIconModule, MatInputModule,
+  MatButtonModule, MatCardModule, MatDialogModule, MatDividerModule, MatIconModule, MatInputModule,
   MatToolbarModule
 } from '@angular/material';
 
@@ -10,7 +10,8 @@ const MODULES = [
   MatIconModule,
   MatToolbarModule,
   MatDividerModule,
-  MatInputModule
+  MatInputModule,
+  MatDialogModule
 ];
 
 @NgModule({

@@ -8,14 +8,17 @@
 
 <mat-toolbar class="menu-extended">
 
-  <div class="avatar">
-    <img width="120" src="https://www.shareicon.net/download/2017/02/05/878221_user_512x512.png">
-  </div>
+  <label for="arquivo">
+    <div class="avatar">
+      <img width="120" height="120" [src]="croppedImage">
+    </div>
+  </label>
 
 </mat-toolbar>
 
 <mat-card>
   <form class="form-account">
+    <input class="hidden" type="file" id="arquivo" #arquivo (change)="fileChangeEvent($event)" />
 
     <mat-form-field>
       <input matInput placeholder="Nome">
@@ -29,6 +32,6 @@
       <input matInput placeholder="E-mail">
     </mat-form-field>
 
-    <button mat-raised-button>ATUALIZAR</button>
+    <button type="button" mat-raised-button>ATUALIZAR</button>
   </form>
 </mat-card>

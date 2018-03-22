@@ -1,0 +1,11 @@
+<image-cropper
+               [imageChangedEvent]="imageChangedEvent"
+               [maintainAspectRatio]="true"
+               [resizeToWidth]="120"
+               format="png"
+               (imageCropped)="imageCropped($event)"
+               (imageLoaded)="imageLoaded()"
+               (loadImageFailed)="loadImageFailed()"
+></image-cropper>
+
+<button mat-button [mat-dialog-close]="true">Salvar</button>
