@@ -7,12 +7,14 @@ import { FormService } from './services/form.service';
 
 import { FormComponent } from './components/form.component';
 import { CropComponent } from './containers/crop-component';
+import { NgxMaskModule } from 'ngx-mask';
 
 @NgModule({
   imports: [
     CommonModule,
     MaterialModule,
-    ImageCropperModule
+    ImageCropperModule,
+    NgxMaskModule
   ],
   declarations: [
     FormComponent,

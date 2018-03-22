@@ -4,9 +4,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutesModule } from './app.routes.module';
 
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-import {MaterialModule} from './modules/material/material.module';
-import {MAT_DIALOG_DEFAULT_OPTIONS} from '@angular/material';
+import { MaterialModule } from './modules/material/material.module';
+import { NgxMaskModule } from 'ngx-mask';
 
 import { DashboardModule } from './modules/dashboard/dashboard.module';
 import { FormModule } from './modules/form/form.module';
@@ -22,11 +21,11 @@ import { AppComponent } from './app.component';
     BrowserModule,
     AppRoutesModule,
     BrowserAnimationsModule,
-    NgbModule.forRoot(),
+    MaterialModule,
+    NgxMaskModule.forRoot(),
     DashboardModule,
     FormModule,
-    ListModule,
-    MaterialModule
+    ListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
