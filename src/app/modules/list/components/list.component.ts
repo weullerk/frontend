@@ -9,7 +9,7 @@ import { ListService } from '../services/list.service';
 })
 export class ListComponent implements OnInit {
   throttle = 300;
-  scrollDistance = 1;
+  scrollDistance = 2;
   itens: Consumo[] = [];
 
   constructor(private listService: ListService) { }

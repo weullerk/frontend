@@ -1,6 +1,12 @@
-@color-primary: #673ab7;
-@color-secondary: #999999;
-@color-accent: rgb(245, 245, 245);
+@color-primary: #F7931E;
+@color-secondary: #E5DEDB;
+@color-accent: #EF4051;
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+}
 
 .primary { color: @color-primary; }
 .secondary { color: @color-secondary; }
@@ -25,4 +31,14 @@
   .icon {
     text-align: left;
   }
+}
+
+mat-toolbar {
+  background-color: @color-accent !important;
+  font-weight: bold !important;
+  color: white !important;
+}
+
+button.mat-primary {
+  background-color: @color-primary !important;
 }
