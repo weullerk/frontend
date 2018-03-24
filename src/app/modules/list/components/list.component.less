@@ -15,8 +15,11 @@
   display: flex;
   flex-flow: column nowrap;
   margin-top: 1em;
+  min-height: 500px;
+  padding-bottom: 1.5em;
 
-  .consumption-item {
+
+  .consumption-item, .consumption-loading {
     display: flex;
     flex-flow: row nowrap;
     flex-grow: 1;
@@ -43,5 +46,9 @@
       padding-top: 1em;
       text-align: right;
     }
+  }
+
+  .consumption-loading {
+    color: rgba(0, 0, 0, 0.87);
   }
 }

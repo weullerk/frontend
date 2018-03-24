@@ -20,21 +20,32 @@
            [infiniteScrollThrottle]="throttle"
            (scrolled)="onScrollDown()">
 
-              <div class="consumption-item"
-                *ngFor="let item of itens"
-              >
+              <div *ngFor="let item of itens" class="consumption-item">
 
-              <div class="consumption-icon">
-                <mat-icon>{{ item.icon }}</mat-icon>
+                <div class="consumption-icon">
+                  <mat-icon>{{ item.icon }}</mat-icon>
+                </div>
+
+                <div class="consumption-wrapper">
+                  <div class="consumption-description mat-caption">{{ item.description }}</div>
+                  <div class="consumption-price ">{{ item.price }}</div>
+                </div>
+
+                <div class="consumption-date mat-caption">{{ item.date }}</div>
+
               </div>
 
-              <div class="consumption-wrapper">
-                <div class="consumption-description mat-caption">{{ item.description }}</div>
-                <div class="consumption-price ">{{ item.price }}</div>
+              <div *ngIf="showLoading" class="consumption-loading">
+                <div class="consumption-icon">
+                  <mat-icon></mat-icon>
+                </div>
+
+                <div class="consumption-wrapper">
+                  <div class="consumption-description mat-caption">Carregando...</div>
+                  <div class="consumption-price"></div>
+                </div>
+
+                <div class="consumption-date mat-caption"></div>
               </div>
-
-              <div class="consumption-date mat-caption">{{ item.date }}</div>
-
-            </div>
   </section>
 </mat-card>
