@@ -23,12 +23,12 @@
               <div *ngFor="let item of itens" class="consumption-item">
 
                 <div class="consumption-icon">
-                  <mat-icon>{{ item.icon }}</mat-icon>
+                  <mat-icon>{{ item.type == "food" ? 'restaurant' : 'local_bar' }}</mat-icon>
                 </div>
 
                 <div class="consumption-wrapper">
                   <div class="consumption-description mat-caption">{{ item.description }}</div>
-                  <div class="consumption-price ">{{ item.price }}</div>
+                  <div class="consumption-price ">R$ {{ item.price }}</div>
                 </div>
 
                 <div class="consumption-date mat-caption">{{ item.date }}</div>

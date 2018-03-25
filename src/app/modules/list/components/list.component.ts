@@ -9,8 +9,8 @@ import { timer } from 'rxjs/observable/timer';
   styleUrls: ['./list.component.less']
 })
 export class ListComponent implements OnInit {
-  throttle = 150;
-  scrollDistance = 3;
+  throttle = 300;
+  scrollDistance = 2;
   loadingExtract = false;
   showLoading = false;
   itens: ExtractItem[] = [];
@@ -22,7 +22,7 @@ export class ListComponent implements OnInit {
       this.itens.push(...itens.slice());
       this.itens.push(...itens.slice());
     }, (error: any) => {
-      //
+      console.error('Falha ao buscar itens do extrato:' + error.errors);
     });
   }
 
@@ -39,7 +39,6 @@ export class ListComponent implements OnInit {
     timer(150).subscribe(
       () => this.showLoading = this.loadingExtract === true || false
     );
-
   }
 
 }
